@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "n_splits": 5
+  },
+  "ensemble": {
+    "lr": 0.001,
+    "epoch_n": 9
+  },
+  "models": {
+    "effnet-b3": {
+      "pretrained_name": "efficientnet-b3",
+      "advprop": false,
+      "pretrained_path": "models/",
+      "epoch_n": 12,
+      "batch_size": 48,
+      "image_dim": 300,
+      "lr": 0.001,
+      "n_splits": 5
+    },
+    "effnet-b4": {
+      "pretrained_name": "efficientnet-b4",
+      "advprop": false,
+      "pretrained_path": "models/",
+      "epoch_n": 18,
+      "batch_size": 40,
+      "image_dim": 380,
+      "lr": 0.001,
+      "n_splits": 5
+    },
+    "effnet-b5": {
+      "pretrained_name": "efficientnet-b5",
+      "advprop": false,
+      "pretrained_path": "models/",
+      "epoch_n": 25,
+      "batch_size": 16,
+      "image_dim": 456,
+      "lr": 0.001,
+      "n_splits": 5
+    }
+  }
+}
